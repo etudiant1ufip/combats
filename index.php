@@ -25,6 +25,17 @@
     </header>
 
     <main class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+        <?php
+            $sql = "SELECT count(*) FROM personnages";
+            $response = $db->query( $sql );
+            $nbPerso = $response->fetch();
+
+            echo '<p>Nombre de personnages créés : ' . $nbPerso[0] . '</p>';
+        ?>
+            </div>
+        </div>
 
     </main>
     

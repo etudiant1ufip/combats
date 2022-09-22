@@ -28,7 +28,9 @@
         <div class="row">
             <div class="col-12 mt-5">
         <?php
-            $sql = "SELECT count(*) FROM personnages";
+
+
+        $sql = "SELECT count(*) FROM personnages";
             $response = $db->query( $sql );
             $nbPerso = $response->fetch();
 
